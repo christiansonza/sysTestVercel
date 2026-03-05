@@ -4,9 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './views/Nav';
 
 // Auth
-// import Login from './Auth/Login';
-// import Register from './Auth/Register';
-
+import Login from './Auth/Login'
+import Register from './Auth/Register'
 // Views
 import User from './views/User';
 import Company from './views/Company';
