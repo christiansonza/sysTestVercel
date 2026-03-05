@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 import { useRegisterUserMutation } from '../features/userSlice'
-import authStyle from '../auth/auth.module.css'
+import authStyle from './auth.module.css'
 import logo from '../assets/acestar.jpg'
 
 export default function Login() {

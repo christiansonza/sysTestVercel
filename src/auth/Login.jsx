@@ -3,7 +3,7 @@ import { useNavigate, Link} from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast'
 import { useLoginUserMutation } from '../features/userSlice'
 // import styleLoader from '../auth/loading.module.css'
-import authStyle from '../auth/auth.module.css'
+import authStyle from './auth.module.css'
 import logo from '../assets/acestar.jpg'
 
 export default function Login() {
