@@ -2,7 +2,7 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
 export const departmentApi = createApi({
     reducerPath:'departmentApi',
-    baseQuery:fetchBaseQuery({baseUrl:'http://localhost:4000/department', credentials:'include'}),
+    baseQuery:fetchBaseQuery({baseUrl:`${import.meta.env.VITE_API_URL}/department`, credentials:'include'}),
     tagTypes:['department'],
     endpoints:(builder)=>({
         fetchDepartment:builder.query({

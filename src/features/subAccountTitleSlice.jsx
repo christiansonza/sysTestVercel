@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const subAccountApi = createApi({
   reducerPath: 'subAccountApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:4000/subAccount',
+    baseUrl: `${import.meta.env.VITE_API_URL}/subAccount`,
     credentials: 'include',
   }),
   tagTypes: ['subAccount'],

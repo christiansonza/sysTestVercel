@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const paymentRequestApi = createApi({
   reducerPath: 'paymentRequestApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:4000/paymentRequest',
+    baseUrl: `${import.meta.env.VITE_API_URL}/paymentRequest`,
     credentials: 'include'
   }),
   tagTypes: ['paymentRequest'],
